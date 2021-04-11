@@ -1,0 +1,116 @@
+html {
+	font-family: 'open sans', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	background-color: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.panel {
+	display: flex;
+	background-color: white;
+	border-radius: 10px;
+	padding: 15px 25px;
+	width: 100%;
+	max-width: 960px;
+	flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pricing-plan {
+	/* border-bottom: 1px solid #ccc; */
+}
+.pricing-plan:last-child {
+	border-bottom: none;
+}
+.pricing-img {
+	margin-bottom: 20px;
+	max-width: 100%;
+}
+.pricing-header {
+	color: rgb(180, 179, 179);
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 1em;
+}
+
+.pricing-features {
+	color: #016ff9;
+	margin: 50px 0 25px;
+	padding-inline-start: 0px;
+	/* border-bottom: 1px solid #ccc; */
+}
+.pricing-features-item {
+	list-style-type: none;
+	padding: 15px 0;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	/* padding-bottom: 20px; */
+	min-height: 36px;
+	/* width: 120%; */
+}
+.pricing-features-item:first-child {
+	/* border-bottom: 1px solid #ccc; */
+}
+.pricing-price {
+	display: block;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 28px;
+	color: #016ff9;
+}
+
+.pricing-button {
+	border: 1px solid #016ff9;
+	padding: 15px 35px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 10px;
+	transition: background-color 0.45s ease;
+	letter-spacing: 2px;
+}
+.pricing-button:hover {
+	background-color: #0171f92c;
+}
+.is-featured {
+	background-color: #0171f9c0;
+	color: white;
+}
+.is-featured:hover {
+	background-color: #016ff9;
+}
+
+@media (min-width: 700px) {
+	body {
+		background-color: lightskyblue;
+	}
+	.panel {
+		/* background-color: brown; */
+		display: flex;
+		/* width: 100%; */
+		flex-direction: row;
+		height: 90%;
+		max-width: 960px;
+	}
+	.pricing-plan {
+		padding-right: 50px;
+		padding-left: 50px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.pricing-plan:nth-of-type(2) {
+		border-right: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+}
