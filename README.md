@@ -1,0 +1,1 @@
+# price-table-mobile-responsive
